@@ -89,7 +89,6 @@ export default function NavigationBar() {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
                   className={classNames(
                     item.current
                       ? 'bg-red-500 text-white'
@@ -98,7 +97,9 @@ export default function NavigationBar() {
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
-                  {item.name}
+                  <Link to={item.link} className="block w-full h-full">
+                    {item.name}
+                  </Link>
                 </Disclosure.Button>
               ))}
             </div>
