@@ -22,5 +22,11 @@ PrinterMart leverages the following technologies:
 ## Contributing
 Contributions to PrinterMart are welcome! Whether you want to report a bug, suggest a feature, or submit a pull request, please feel free to contribute to the project. For major changes, please open an issue first to discuss the proposed changes.
 
+# #HOME PAGE
 ![image](https://github.com/mehjbeen22/Printer_webPage/assets/122697933/187346fb-2e54-48f1-80a7-ec9e9069f9f1)
+
+![image](https://github.com/mehjbeen22/Printer_webPage/assets/122697933/c8db5f13-f0b7-4b01-8706-d34d015e05b5)
+
+![image](https://github.com/mehjbeen22/Printer_webPage/assets/122697933/cb3901bd-c5e6-4e96-8db6-aa857c34ffb4)
+
 
