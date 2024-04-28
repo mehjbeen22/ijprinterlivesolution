@@ -22,15 +22,13 @@ export default function Home() {
               />
             </svg>
 
-            <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-              <h2 className=" font-bold text-white sm:text-4xl text-left  overflow-wrap break-word">
+            <div className="mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-center">
+              <h2 className=" font-bold text-white sm:text-4xl  overflow-wrap break-word sm:text-center tracking-wider">
                 <span className="text-5xl">Effortless Printing</span> <br />
-                <span className="mt-4 block text-3xl">
-                  Seamless Connectivity.
-                </span>
+                <span className="mt-4  text-3xl">Seamless Connectivity</span>
               </h2>
 
-              <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+              <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-center">
                 <a
                   href="#"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold

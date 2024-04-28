@@ -12,14 +12,17 @@ export default function Products() {
   return (
     <section className=" flex flex-col items-center text-center">
       {/*border-4 border-green-500  */}
-      <h1 className="text-5xl">
+      {/* <h1 className="text-5xl">
         <span className="text-red-600">P</span>roducts
-      </h1>
+      </h1> */}
       <div>
         {/* className="border-2 border-current" */}
-        <div className=" flex flex-col justify-center align-center mt-10 gap-5 p-16 shadow-2xl ">
+        <div className=" flex flex-col justify-center items-center mt-10 gap-5 p-16 shadow-2xl ">
           {/* border-4 border-red-200 */}
-          <h2 className="text-center text-3xl  italic">
+          <h2
+            className="text-4xl  text-white inline p-3 sm:w-[100%]"
+            style={{ maxWidth: '45%', backgroundColor: '#991b1b' }}
+          >
             Best Selling Products
           </h2>
           <div className="grid gap-4 mt-7 sm:grid-cols-2 md:grid-cols-3">

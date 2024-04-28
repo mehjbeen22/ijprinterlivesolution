@@ -10,14 +10,6 @@ const navigation = [
   { name: 'Contact', link: '/contact', current: false },
 ];
 
-// const navigation = [
-//   { name: 'Home', href: '/', current: true },
-//   { name: 'About', href: '/about', current: false },
-//   { name: 'Shop', href: '/shop', current: false },
-//   { name: "Faq's", href: '/faqs', current: false },
-//   { name: 'Contact', href: '/contact', current: false },
-// ];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -26,15 +18,7 @@ export default function NavigationBar() {
   const location = useLocation();
 
   return (
-    <Disclosure
-      as="nav"
-      className="bg-gray-50"
-      style={{
-        borderBottom: '2px solid red',
-        boxShadow:
-          'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;',
-      }}
-    >
+    <Disclosure as="nav" className="bg-gray-50 border-2 border-gray-200">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">

@@ -7,9 +7,14 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 const FeatureProduct = () => {
   return (
-    <div className=" flex flex-col justify-center align-center mt-10 gap-5 p-16 shadow-2xl ">
+    <div className=" flex flex-col justify-center items-center mt-10 gap-5 p-16 shadow-2xl  ">
       {/* border-4 border-red-200 */}
-      <h2 className="text-center text-3xl  italic">Best Selling Products</h2>
+      <h2
+        className="text-4xl  text-white inline p-3 sm:w-[100%]"
+        style={{ maxWidth: '45%', backgroundColor: '#991b1b' }}
+      >
+        Best Selling Products
+      </h2>
       <div className="grid gap-4 mt-7 sm:grid-cols-2 md:grid-cols-3">
         {featureProducts.map(
           ({ id, imageLink, description, price, previousPrice }) => {
