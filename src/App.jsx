@@ -8,7 +8,10 @@ import ShopPage from './components/pages/ShopPage';
 import FaqPage from './components/pages/FaqPage';
 import Contact from './components/pages/Contact';
 import LastSection from './components/sections/LastSection';
-
+import Disclaimer from './components/customer service/Disclaimer';
+import PrivacyPolicy from './components/customer service/PrivacyPolicy';
+import RefundandReturn from './components/customer service/RefundandReturn';
+import TermAndCondition from './components/customer service/TermAndCondition';
 const App = () => {
   return (
     <Router>
@@ -19,6 +22,10 @@ const App = () => {
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/faqs" element={<FaqPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/refundandreturn" element={<RefundandReturn />} />
+        <Route path="/t&c" element={<TermAndCondition />} />
       </Routes>
       <LastSection />
       <Footer />

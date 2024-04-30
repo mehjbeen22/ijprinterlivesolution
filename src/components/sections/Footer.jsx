@@ -3,6 +3,7 @@ import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GoogleIcon from '@mui/icons-material/Google';
 import styles from '../styling/Home.module.css';
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className={styles.container}>
@@ -36,16 +37,16 @@ const Footer = () => {
               <h3 className="text-white font-bold mb-3">Customer Service</h3>
               <ul>
                 <li className="mb-3">
-                  <a href="disclaimer.html">Disclaimer</a>
+                  <Link to="/disclaimer">Disclaimer</Link>
                 </li>
                 <li className="mb-3">
-                  <a href="privacy.html">Privacy Policy</a>
+                  <Link to="/privacypolicy">Privacy Policy</Link>
                 </li>
                 <li className="mb-3">
-                  <a href="refund.html">Refund and Return Policy</a>
+                  <Link to="/refundandreturn">Refund and Return Policy</Link>
                 </li>
                 <li className="mb-3">
-                  <a href="terms.html">Terms and Conditions</a>
+                  <Link to="/t&c">Terms and Conditions</Link>
                 </li>
               </ul>
             </div>
