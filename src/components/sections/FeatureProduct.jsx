@@ -90,14 +90,14 @@ const featureProducts = [
   },
   {
     id: '02',
-    imageLink: 'https://ijprintersolution.com/images/m2.jpg',
+    imageLink: 'https://i.ibb.co/CtZQGxY/image2.jpg',
     description: 'Canon MF3010 Multifunction Printer',
     price: '$230.00',
     previousPrice: '$250.00',
   },
   {
     id: '03',
-    imageLink: 'https://ijprintersolution.com/images/m3.jpg',
+    imageLink: 'https://i.ibb.co/HNyKJbn/images3.jpg',
     description: 'Canon PIXMA IX6770 A3 Printer',
     price: '$145.00',
     previousPrice: '$170.00',
