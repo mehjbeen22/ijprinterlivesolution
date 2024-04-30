@@ -41,7 +41,7 @@ export default function Products() {
                   >
                     <CardMedia
                       component="img"
-                      sx={{ maxWidth: '70%' }}
+                      sx={{ maxWidth: '50%' }}
                       image={imageLink}
                       alt="Product"
                     />
