@@ -82,7 +82,8 @@ export default FeatureProduct;
 const featureProducts = [
   {
     id: '01',
-    imageLink: 'https://ijprintersolution.com/images/m1.jpg',
+    imageLink:
+      'https://asia.canon/media/image/2020/08/26/e0974bdc54d445039d4e3db2301b0c73_E34xx_AS_FR_cl2_blk_en-362x320.png',
     description: 'Canon imageCLASS LBP6030W Mono',
     price: '$370.00',
     previousPrice: '$400.00',
