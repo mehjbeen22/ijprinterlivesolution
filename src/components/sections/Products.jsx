@@ -21,7 +21,7 @@ export default function Products() {
           {/* border-4 border-red-200 */}
           <h2
             className="text-4xl  text-white inline p-3 sm:w-[100%]"
-            style={{ maxWidth: '45%', backgroundColor: '#991b1b' }}
+            style={{ maxWidth: '40%', backgroundColor: '#991b1b' }}
           >
             Best Selling Products
           </h2>
