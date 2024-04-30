@@ -20,8 +20,8 @@ export default function Products() {
         <div className=" flex flex-col justify-center items-center mt-10 gap-5 p-16 shadow-2xl ">
           {/* border-4 border-red-200 */}
           <h2
-            className="text-4xl  text-white inline p-3 sm:w-[100%]"
-            style={{ maxWidth: '45%', backgroundColor: '#991b1b' }}
+            className="text-2xl  text-white inline p-3 sm:text-4xl"
+            style={{ backgroundColor: '#991b1b' }}
           >
             Best Selling Products
           </h2>
