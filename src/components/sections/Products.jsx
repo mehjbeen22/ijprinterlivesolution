@@ -101,7 +101,8 @@ export default function Products() {
 const cardData = [
   {
     id: 1,
-    imageLink: 'https://ijprintersolution.com/images/m7.jpg',
+    imageLink:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-rbENCOe_9vGCHxUleG8xH-uPVqnAIKJ5jGzHtye7g&s',
     description: 'Canon PIXMA E477 Colour Printer',
     price: '$68.00 ',
     previousPrice: '$80.00',
@@ -109,35 +110,35 @@ const cardData = [
 
   {
     id: 2,
-    imageLink: 'https://ijprintersolution.com/images/m8.jpg',
+    imageLink: 'https://i.ibb.co/gFWrjxw/images5.jpg',
     description: 'Canon PIXMA MegaTank Printer',
     price: '$193.00 ',
     previousPrice: '$207.00',
   },
   {
     id: 3,
-    imageLink: 'https://ijprintersolution.com/images/m9.jpg',
+    imageLink: 'https://i.ibb.co/mqGyCKJ/images6.jpg',
     description: 'Canon PIXMA Monochrome Printer',
     price: '$520.99',
     previousPrice: '$600.99',
   },
   {
     id: 4,
-    imageLink: 'https://ijprintersolution.com/images/m4.jpg',
+    imageLink: 'https://i.ibb.co/bKVk0mp/images7.jpg',
     description: 'Canon PIXMA MegaTank G2012',
     price: '$145.00',
     previousPrice: '$160.00',
   },
   {
     id: 5,
-    imageLink: 'https://ijprintersolution.com/images/m5.jpg',
+    imageLink: 'https://i.ibb.co/9y8mCt2/images8.jpg',
     description: 'Canon PIXMA MG3070S Printer',
     price: '$55.00',
     previousPrice: '$70.00',
   },
   {
     id: 6,
-    imageLink: 'https://ijprintersolution.com/images/m6.jpg',
+    imageLink: 'https://i.ibb.co/5r5dzwp/image9.jpg',
     description: 'Canon MF244DW Digital Printer',
     price: '$360.00',
     previousPrice: '$400.00',
