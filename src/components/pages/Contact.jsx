@@ -7,7 +7,8 @@ function classNames(...classes) {
 }
 
 const style = {
-  backgroundImage: "url('https://ijprintersolution.com/images/bg.jpg')",
+  backgroundImage:
+    "url('https://i0.wp.com/www.alphr.com/wp-content/uploads/2022/08/featured-25.png?fit=600%2C300&ssl=1')",
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   height: '400px',
