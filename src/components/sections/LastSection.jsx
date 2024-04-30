@@ -33,7 +33,7 @@ const LastSection = () => {
             <p className="text-gray-500">Free shipping order over $100</p>
           </section>
           <img
-            src="https://ijprintersolution.com/images/off2.png"
+            src="https://i.ibb.co/jHY9Wqg/image4.png"
             alt=""
             className={styles.cardImage}
           />
