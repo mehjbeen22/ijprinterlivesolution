@@ -1,6 +1,7 @@
 import styles from '../styling/Home.module.css';
 import Products from './Products';
 import LastSection from './LastSection';
+import Footer from './Footer';
 
 export default function Home() {
   return (
@@ -43,6 +44,8 @@ export default function Home() {
         </div>
       </div>
       <Products />
+      <LastSection />
+      <Footer/>
     </>
   );
 }

@@ -15,3 +15,8 @@
 
   font-style: normal;
 }
+
+.modal-content-custom {
+  border-radius: 0; /* Sets border-radius to none */
+  border: 10px solid red; /* Adds 8px red border */
+}

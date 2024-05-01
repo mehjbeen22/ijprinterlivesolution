@@ -1,38 +1,67 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { ColorRing } from 'react-loader-spinner';
+import Footer from '../sections/Footer';
 
 const style = {
   backgroundImage:
     "url('https://i0.wp.com/www.alphr.com/wp-content/uploads/2022/08/featured-25.png?fit=600%2C300&ssl=1')",
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  height: '400px',
+  height: '200px',
 };
+
 const TermAndCondition = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <>
-      <div style={style}></div>
-      <div className="flex justify-center items-center flex-col">
-        <h1 className="text-center text-6xl text-red-500 m-5">
-          Terms And Condtions
-        </h1>
-        <p className="text-3xl mb-5">
-          Please Read These Terms And Conditions Carefully.
-        </p>
+      {loading ? (
+        <div className="flex justify-center items-center h-96">
+          <ColorRing
+            visible={true}
+            height={80}
+            width={80}
+            ariaLabel="color-ring-loading"
+            wrapperStyle={{}}
+            wrapperClassName="color-ring-wrapper"
+            colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+          />
+        </div>
+      ) : (
+        <>
+          <div style={style}></div>
+          <div className="flex justify-center items-center flex-col">
+            <h1 className="text-center text-6xl text-red-500 m-5">
+              Terms And Conditions
+            </h1>
+            <p className="text-3xl mb-5">
+              Please Read These Terms And Conditions Carefully.
+            </p>
 
-        <ol className=" p-8" style={{ width: '80%' }}>
-          {termAndCondition.map(({ id, head, desc }) => {
-            return (
-              <li
-                key={id}
-                className="my-8 shadow-md p-5 border border-gray-200 rounded-sm"
-              >
-                <p className="text-teal-500 text-xl mb-2">{head}</p>
-                <p>{desc}</p>
-              </li>
-            );
-          })}
-        </ol>
-      </div>
+            <ol className="p-8" style={{ width: '80%' }}>
+              {termAndCondition.map(({ id, head, desc }) => {
+                return (
+                  <li
+                    key={id}
+                    className="my-8 shadow-md p-5 border border-gray-200 rounded-sm"
+                  >
+                    <p className="text-teal-500 text-xl mb-2">{head}</p>
+                    <p>{desc}</p>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+          <Footer />
+        </>
+      )}
     </>
   );
 };

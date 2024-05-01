@@ -42,56 +42,87 @@ You can visit the website without telling us who you are or revealing any inform
   },
 ];
 
-import React from 'react';
+import { ColorRing } from 'react-loader-spinner';
+import { useState, useEffect } from 'react';
+import Footer from '../sections/Footer';
 
 const PrivacyPolicy = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <>
-      <div style={style}></div>
-      <h1 className="text-center text-6xl text-red-500 m-5">Privacy Policy</h1>
-      <div className="p-16">
-        <div className="flex justify-center flex-col p-5 shadow-md border border-gray-200 rounded-sm">
-          {PrivacyPolicies.map(({ id, heading, desc }) => {
-            return (
-              <div key={id}>
-                <h3 className="text-2xl m-2">{heading}</h3>
-                <p className="text-l m-3">{desc}</p>
-              </div>
-            );
-          })}
-
-          <h3 className="text-2xl m-2">Your rights</h3>
-          <p className="text-l m-3">
-            If you are a European resident, you have the following rights
-            related to your personal data:
-          </p>
-
-          <p className="text-l m-1">👉 The right to be informed.</p>
-          <p className="text-l m-1">👉 The right of access.</p>
-          <p className="text-l m-1">👉 The right to rectification.</p>
-          <p className="text-l m-1">👉 The right to erasure.</p>
-          <p className="text-l m-1">👉 The right to restrict processing.</p>
-          <p className="text-l m-1">👉 The right to data portability.</p>
-          <p className="text-l m-1">👉 The right to object.</p>
-          <p className="text-l m-1">
-            👉 Rights in relation to automated decision-making and profiling.
-          </p>
-          <p className="text-l m-3">
-            If you would like to exercise this right, please contact us through
-            the contact information below.
-          </p>
-
-          <p className="text-l m-3">
-            Additionally, if you are a European resident, we note that we are
-            processing your information in order to fulfill contracts we might
-            have with you (for example, if you make an order through the Site),
-            or otherwise to pursue our legitimate business interests listed
-            above. Additionally, please note that your information might be
-            transferred outside of Europe, including Canada and the United
-            States.
-          </p>
+      {loading ? (
+        <div className="flex justify-center items-center  h-96">
+          <ColorRing
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="color-ring-loading"
+            wrapperStyle={{}}
+            wrapperClass="color-ring-wrapper"
+            colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+          />
         </div>
-      </div>
+      ) : (
+        <>
+          <div style={style}></div>
+          <h1 className="text-center text-6xl text-red-500 m-5">
+            Privacy Policy
+          </h1>
+          <div className="p-16">
+            <div className="flex justify-center flex-col p-5 shadow-md border border-gray-200 rounded-sm">
+              {PrivacyPolicies.map(({ id, heading, desc }) => {
+                return (
+                  <div key={id}>
+                    <h3 className="text-2xl m-2">{heading}</h3>
+                    <p className="text-l m-3">{desc}</p>
+                  </div>
+                );
+              })}
+
+              <h3 className="text-2xl m-2">Your rights</h3>
+              <p className="text-l m-3">
+                If you are a European resident, you have the following rights
+                related to your personal data:
+              </p>
+
+              <p className="text-l m-1">👉 The right to be informed.</p>
+              <p className="text-l m-1">👉 The right of access.</p>
+              <p className="text-l m-1">👉 The right to rectification.</p>
+              <p className="text-l m-1">👉 The right to erasure.</p>
+              <p className="text-l m-1">👉 The right to restrict processing.</p>
+              <p className="text-l m-1">👉 The right to data portability.</p>
+              <p className="text-l m-1">👉 The right to object.</p>
+              <p className="text-l m-1">
+                👉 Rights in relation to automated decision-making and
+                profiling.
+              </p>
+              <p className="text-l m-3">
+                If you would like to exercise this right, please contact us
+                through the contact information below.
+              </p>
+
+              <p className="text-l m-3">
+                Additionally, if you are a European resident, we note that we
+                are processing your information in order to fulfill contracts we
+                might have with you (for example, if you make an order through
+                the Site), or otherwise to pursue our legitimate business
+                interests listed above. Additionally, please note that your
+                information might be transferred outside of Europe, including
+                Canada and the United States.
+              </p>
+            </div>
+          </div>
+          <Footer />
+        </>
+      )}
     </>
   );
 };
@@ -103,5 +134,5 @@ const style = {
     "url('https://i0.wp.com/www.alphr.com/wp-content/uploads/2022/08/featured-25.png?fit=600%2C300&ssl=1')",
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  height: '400px',
+  height: '200px',
 };

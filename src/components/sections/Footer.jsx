@@ -21,14 +21,23 @@ const Footer = () => {
                   <a href="about.html">About us</a>
                 </li>
                 <li className="mb-3">
-                  <a href="#" data-toggle="modal" data-target="#exampleModal">
-                    Login{' '}
-                  </a>{' '}
+                  <Link
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                  >
+                    Login
+                  </Link>
                 </li>
+
                 <li className="mb-3">
-                  <a href="#" data-toggle="modal" data-target="#exampleModal2">
+                  <Link
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
                     Register{' '}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

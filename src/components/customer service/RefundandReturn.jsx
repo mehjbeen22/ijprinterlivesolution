@@ -36,62 +36,88 @@ If the goods weren’t marked as a gift when purchased, or the gift giver had th
   },
 ];
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { ColorRing } from 'react-loader-spinner';
+import Footer from '../sections/Footer';
 
 const RefundandReturn = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <>
-      <>
-        <div style={style}></div>
-        <h1 className="text-center text-6xl text-red-500 m-5">
-          Return And Refund Policy
-        </h1>
-        <div className="p-16">
-          <div className="flex justify-center flex-col p-5 shadow-md border border-gray-200 rounded-sm">
-            {refundAndReturn.map(({ id, head, desc }) => {
-              return (
-                <div key={id}>
-                  <h3 className="text-2xl m-2">{head}</h3>
-                  <p className="text-l m-3">{desc}</p>
-                </div>
-              );
-            })}
-
-            <h3 className="text-2xl m-2">Conditions for returns:</h3>
-            <p className="text-l m-3">
-              In order for the goods to be eligible for a return, please make
-              sure that:
-            </p>
-
-            <p className="text-l m-1">
-              👉 The goods were purchased in the last 30 days
-            </p>
-            <p className="text-l m-1">
-              👉 The goods are in the original packaging
-            </p>
-            <p className="text-l m-1">
-              👉The supply of goods made to your specifications or clearly
-              personalized.
-            </p>
-            <p className="text-l m-1">
-              👉 The supply of goods which according to their nature are not
-              suitable to be returned, for example goods which deteriorate
-              rapidly or where the date of expiry is over.
-            </p>
-            <p className="text-l m-1">
-              👉 The supply of goods which are not suitable for return due to
-              health protection or hygiene reasons and were unsealed after
-              delivery.
-            </p>
-            <p className="text-l m-1">
-              👉 The supply of goods which are, after delivery, according to
-              their nature, inseparably mixed with other items. We reserve the
-              right to refuse returns of any merchandise that does not meet the
-              above return conditions at our sole discretion.
-            </p>
-          </div>
+      {loading ? (
+        <div className="flex justify-center items-center h-96">
+          <ColorRing
+            visible={true}
+            height={80}
+            width={80}
+            ariaLabel="color-ring-loading"
+            wrapperStyle={{}}
+            wrapperClassName="color-ring-wrapper"
+            colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+          />
         </div>
-      </>
+      ) : (
+        <>
+          <div style={style}></div>
+          <h1 className="text-center text-6xl text-red-500 m-5">
+            Return And Refund Policy
+          </h1>
+          <div className="p-16">
+            <div className="flex justify-center flex-col p-5 shadow-md border border-gray-200 rounded-sm">
+              {refundAndReturn.map(({ id, head, desc }) => {
+                return (
+                  <div key={id}>
+                    <h3 className="text-2xl m-2">{head}</h3>
+                    <p className="text-l m-3">{desc}</p>
+                  </div>
+                );
+              })}
+
+              <h3 className="text-2xl m-2">Conditions for returns:</h3>
+              <p className="text-l m-3">
+                In order for the goods to be eligible for a return, please make
+                sure that:
+              </p>
+
+              <p className="text-l m-1">
+                👉 The goods were purchased in the last 30 days
+              </p>
+              <p className="text-l m-1">
+                👉 The goods are in the original packaging
+              </p>
+              <p className="text-l m-1">
+                👉The supply of goods made to your specifications or clearly
+                personalized.
+              </p>
+              <p className="text-l m-1">
+                👉 The supply of goods which according to their nature are not
+                suitable to be returned, for example goods which deteriorate
+                rapidly or where the date of expiry is over.
+              </p>
+              <p className="text-l m-1">
+                👉 The supply of goods which are not suitable for return due to
+                health protection or hygiene reasons and were unsealed after
+                delivery.
+              </p>
+              <p className="text-l m-1">
+                👉 The supply of goods which are, after delivery, according to
+                their nature, inseparably mixed with other items. We reserve the
+                right to refuse returns of any merchandise that does not meet
+                the above return conditions at our sole discretion.
+              </p>
+            </div>
+          </div>
+          <Footer />
+        </>
+      )}
     </>
   );
 };

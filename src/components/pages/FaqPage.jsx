@@ -1,30 +1,62 @@
-import React from 'react';
+
+import { ColorRing } from 'react-loader-spinner';
+import { useState, useEffect } from 'react';
+import LastSection from '../sections/LastSection';
+import Footer from '../sections/Footer';
 
 const FaqPage = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <>
-      <div style={style}></div>
-      <div className="flex justify-center items-center flex-col">
-        <h1 className="text-center text-6xl text-red-500 m-5">Faqs</h1>
-        <p className="text-3xl mb-5">Top 10 Frequently asked questions</p>
+      {loading ? (
+        <div className="flex justify-center items-center  h-96">
+          <ColorRing
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="color-ring-loading"
+            wrapperStyle={{}}
+            wrapperClass="color-ring-wrapper"
+            colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+          />
+        </div>
+      ) : (
+        <>
+          <div style={style}></div>
+          <div className="flex justify-center items-center flex-col">
+            <h1 className="text-center text-6xl text-red-500 m-5">Faqs</h1>
+            <p className="text-3xl mb-5">Top 10 Frequently asked questions</p>
 
-        <ol className=" p-8" style={{ width: '80%' }}>
-          {frequentlyAskedQuestions.map(({ id, ques, ans }) => {
-            return (
-              <li
-                key={id}
-                className="my-8 shadow-md p-5 border border-gray-200 rounded-sm"
-              >
-                <p className="text-teal-500 text-xl mb-2">
-                  {' '}
-                  <span>{id}.</span> {ques}
-                </p>
-                <p>{ans}</p>
-              </li>
-            );
-          })}
-        </ol>
-      </div>
+            <ol className=" p-8" style={{ width: '80%' }}>
+              {frequentlyAskedQuestions.map(({ id, ques, ans }) => {
+                return (
+                  <li
+                    key={id}
+                    className="my-8 shadow-md p-5 border border-gray-200 rounded-sm"
+                  >
+                    <p className="text-teal-500 text-xl mb-2">
+                      {' '}
+                      <span>{id}.</span> {ques}
+                    </p>
+                    <p>{ans}</p>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+
+          <LastSection />
+          <Footer />
+        </>
+      )}
     </>
   );
 };
@@ -37,7 +69,7 @@ const style = {
     "url('https://i0.wp.com/www.alphr.com/wp-content/uploads/2022/08/featured-25.png?fit=600%2C300&ssl=1')",
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  height: '400px',
+  height: '300px',
 };
 
 const frequentlyAskedQuestions = [
