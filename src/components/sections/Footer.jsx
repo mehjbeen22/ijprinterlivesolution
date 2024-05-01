@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       {/* "container pt-20 " */}
-      <div className="w3l-middlefooter-sec bg-current p-16  ">
+      <div className="w3l-middlefooter-sec bg-current p-6  ">
         <div className="container py-md-5 py-sm-4 py-3">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="footer-grids  text-white">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+            <div className="footer-grids  text-white ">
               <h3 className=" font-bold mb-3">Quick Links</h3>
               <ul>
                 <li className="mb-3">
@@ -42,7 +42,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="footer-grids text-white mt-4 sm:mt-0">
+            <div className="footer-grids text-white  sm:mt-0">
               <h3 className="text-white font-bold mb-3">Customer Service</h3>
               <ul>
                 <li className="mb-3">
@@ -59,7 +59,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="footer-grids mt-4 sm:mt-0">
+            <div className="footer-grids  sm:mt-0">
               <h3 className="text-white font-bold mb-3">Get in Touch</h3>
               <ul className="text-white">
                 <li className="mb-3 flex">
@@ -117,22 +117,22 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="footer-grids mt-4 sm:mt-0">
+            <div className="footer-grids  sm:mt-0">
               <h3 className="text-white font-bold mb-3">Newsletter</h3>
               <p className="mb-3 text-white">
                 Free Delivery on your first order!
               </p>
               <form action="#" method="post">
-                <div className="form-group">
+                <div className="form-group flex ">
                   <input
                     type="email"
                     placeholder="Email"
                     name="email"
                     required=""
-                    className="min-w-0 flex-auto px-3.5 py-2 text-white outline-none sm:text-sm sm:leading-6"
+                    className="min-w-0  px-3.5 py-2 text-white outline-none sm:text-sm sm:leading-6"
                   />
                   <button
-                    className="text-white px-4 py-2 ml-1.5"
+                    className="text-white px-3 py-2 ml-1.5"
                     style={{ backgroundColor: '#737373' }}
                   >
                     GO
