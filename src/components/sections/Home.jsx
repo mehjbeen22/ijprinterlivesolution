@@ -33,7 +33,7 @@ export default function Home() {
                 <a
                   href="#"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold
-                 text-gray-900 shadow-sm hover:bg-red-500 hover:text-white 
+                 text-gray-900 shadow-sm hover:bg-red-500 hover:text-red-500 
                  focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
                 >
                   SHOP NOW
@@ -45,7 +45,7 @@ export default function Home() {
       </div>
       <Products />
       <LastSection />
-      <Footer/>
+      <Footer />
     </>
   );
 }
