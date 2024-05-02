@@ -33,34 +33,52 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <div className="flex justify-center items-center flex-col py-8">
-            <div className="aboutContainer flex w-full shadow-md border border-gray-200 rounded-sm">
-              <section className="w-full p-5 text-center flex flex-col justify-center items-center">
-                {/* Align text at left */}
-                <h2 className="md:text-4xl text-3xl italic text-red-700">
-                  ijprinter solution setup
-                </h2>
-                {/* Smaller heading */}
-                <li className="mt-5">Make sure your printer is powered on</li>
-                <li className="mt-3 ml-3">
-                  {/* Add margin to the third li */}
-                  Select Download to install the recommended <br />
-                  printer software to complete setup
-                </li>
+          <div className="flex justify-center items-center flex-col py-8 bg-red-700">
+            <div className="aboutContainer flex w-full ">
+              {' '}
+              {/* //border border-gray-200 shadow-md  rounded-sm*/}
+              <section className="w-full  text- flex flex-col justify-center ">
+                <ul>
+                  {/* className='border border-white' */}
+                  <li className=" text-white list-disc">
+                    Make sure your printer is powered on
+                  </li>
+                  <li className="mt-2 mb-4 text-white list-disc">
+                    {/* Add margin to the third li */}
+                    Select Download to install the recommended <br />
+                    <span className="">
+                      {' '}
+                      printer software to complete setup
+                    </span>
+                  </li>
+                </ul>
 
                 <Link
                   to="/productsetup"
-                  className="flex mt-5 gap-2 p-3 font-medium items-center gap-1 
-              bg-red-700 text-white list-none py-2 bg-red-600 rounded-md"
+                  className="flex mt-3 gap-2 p-2  items-center gap-2
+              bg-red-700 text-white list-none   text-center bg-black rounded-md max-w-[50%]"
                 >
-                  <p>CLICK HERE FOR SETUP</p>
+                  <div
+                    className="bg-red-700"
+                    style={{
+                      height: '40px',
+                      width: '40px',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      padding: '2px',
+                    }}
+                  >
+                    <p style={{ fontSize: '12px' }}>𝐂𝖆𝖓𝖔𝖓</p>
+                  </div>
+                  <p>𝑪𝑳𝑰𝑪𝑲 𝑯𝑬𝑹𝑬 𝑭𝑶𝑹 𝑺𝑬𝑻𝑼𝑷</p>
                 </Link>
               </section>
-
               <section className="hidden md:block p-5">
                 {/* Hide on mobile devices */}
                 <img
-                  src="https://m.media-amazon.com/images/I/81PtstjRtSL._AC_UF1000,1000_QL80_.jpg"
+                  src="https://i.ibb.co/TwhCcys/printer-Image-removebg-preview.png"
                   alt=""
                   style={{ height: '100%', width: '100%' }}
                 />

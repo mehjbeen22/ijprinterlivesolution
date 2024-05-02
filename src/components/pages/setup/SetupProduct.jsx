@@ -9,7 +9,9 @@ const SetupProduct = () => {
       >
         Home
       </Link>
-      <h1 className="text-3xl font-bold text-red-700 ml-10">Select Product Name</h1>
+      <h1 className="text-3xl font-bold text-red-700 ml-10">
+        Select Product Name
+      </h1>
 
       <div className="flex flex-col items-center px-4 py-8 space-y-4">
         <p className="text-center text-lg">
@@ -21,9 +23,12 @@ const SetupProduct = () => {
             placeholder="Example: TS9030"
             className=" border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black"
           />
-          <button className="hover:bg-red-600 bg-black text-white  font-medium  text-md px-3 py-2.5 text-center ml-2">
+          <Link
+            to="/canonsetup"
+            className="hover:bg-red-600 bg-black text-white  font-medium  text-md px-3 py-2.5 text-center ml-2"
+          >
             Go
-          </button>
+          </Link>
         </div>
         <p className="text-base text-blue-400 underline">
           Where to find your product name
@@ -43,14 +48,6 @@ const SetupProduct = () => {
             );
           })}
         </ul>
-        <p>
-          If you are using a product not shown above, see
-          <span className="text-blue-600 underline">"Other Products."</span>
-        </p>
-        <p>
-          If the product you are looking for cannot be found, reselect your
-          region.
-        </p>
 
         <select name="operaValues" className="w-[20%] border-2 border ">
           {opareaValues.map((lang, index) => (
@@ -88,8 +85,8 @@ const product_series = [
 ];
 
 const opareaValues = [
-  'Japan',
   'U.S.A.',
+  'Japan',
   'Canada',
   'Latin America',
   'Europe',

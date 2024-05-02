@@ -15,6 +15,7 @@ import Register from './components/customer service/Register';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import SetupProduct from './components/pages/setup/SetupProduct';
+import CanonSetup from './components/pages/setup/CanonSetup';
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/refundandreturn" element={<RefundandReturn />} />
           <Route path="/t&c" element={<TermAndCondition />} />
           <Route path="/productsetup" element={<SetupProduct />} />
+          <Route path="/canonsetup" element={<CanonSetup />} />
         </Routes>
       </Router>
     </>

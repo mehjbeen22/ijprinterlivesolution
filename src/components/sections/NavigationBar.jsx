@@ -38,9 +38,10 @@ export default function NavigationBar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ">
                 <div className="flex flex-shrink-0 items-center">
-                  <p className="h-10 w-auto ml-10 text-2xl italic text-red-700 font-medium">
-                    iJPrinterSolutionLive
-                  </p>
+                  <img
+                    src="https://www.cla.canon.com/sys/images/canon_main_logo.gif"
+                    className="h-10 w-auto ml-10 text-2xl italic text-red-700 font-medium"
+                  ></img>
                 </div>
                 <div className="hidden sm:ml-auto sm:block ">
                   <div className="flex space-x-4">
