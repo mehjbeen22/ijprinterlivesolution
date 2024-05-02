@@ -170,7 +170,7 @@ const Footer = () => {
       </div>
 
       {/* last Footer */}
-      <div style={{ backgroundColor: '#FF0000', padding: '15px' }}>
+      <div className='p-4 bg-red-700'>
         <div className="container mx-auto">
           <p className="text-center text-white text-lg">
             © {new Date().getFullYear()} ij printersolutionLive Store. All

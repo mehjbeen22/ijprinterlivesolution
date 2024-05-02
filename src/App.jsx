@@ -14,6 +14,7 @@ import Login from './components/customer service/Login';
 import Register from './components/customer service/Register';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import SetupProduct from './components/pages/setup/SetupProduct';
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/refundandreturn" element={<RefundandReturn />} />
           <Route path="/t&c" element={<TermAndCondition />} />
+          <Route path="/productsetup" element={<SetupProduct />} />
         </Routes>
       </Router>
     </>

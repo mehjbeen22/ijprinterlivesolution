@@ -21,9 +21,9 @@ export default function Products() {
           {/* border-4 border-red-200 */}
           <h2
             className="text-2xl  text-white inline p-3 sm:text-4xl"
-            style={{ backgroundColor: '#991b1b' }}
+            style={{ width: '100%', backgroundColor: '#991b1b' }}
           >
-            Best Selling Products
+            Products
           </h2>
           <div className="grid gap-4 mt-7 sm:grid-cols-2 md:grid-cols-3">
             {cardData.map(

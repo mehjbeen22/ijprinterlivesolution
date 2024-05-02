@@ -28,3 +28,17 @@
     flex-direction: column;
   }
 }
+
+/* ..................  Home Page Media Query .................... */
+
+.aboutContainer {
+  max-width: 800px; /* Example value for the max-width */
+  margin: 0 auto; /* Center the container */
+}
+
+@media (min-width: 768px) {
+  /* Example media query for medium-sized screens */
+  .aboutContainer {
+    max-width: 1000px; /* Adjust to desired fixed content width */
+  }
+}
