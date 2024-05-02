@@ -38,11 +38,9 @@ export default function NavigationBar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-10 w-auto"
-                    src="https://i.ibb.co/4SYYZ75/Screenshot-2024-04-26-194846.png"
-                    alt="Your Company"
-                  />
+                  <p className="h-10 w-auto ml-10 text-2xl italic text-red-700 font-medium">
+                    iJPrinterSolutionLive
+                  </p>
                 </div>
                 <div className="hidden sm:ml-auto sm:block ">
                   <div className="flex space-x-4">

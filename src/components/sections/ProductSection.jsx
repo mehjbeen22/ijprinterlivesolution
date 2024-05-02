@@ -4,7 +4,7 @@ const ProductSection = () => {
   return (
     <div
       className=" border-2 border-greenyellow flex justify-evenly flex-col md:flex-row relative"
-      style={{ backgroundColor: '#ff0000' }}
+      style={{ backgroundColor: '#b91c1c' }}
     >
       <div className="left flex justify-center items-center flex-col md:w-1/2">
         <h1 className="head font-open-sans text-white text-5xl font-semibold tracking-wide">

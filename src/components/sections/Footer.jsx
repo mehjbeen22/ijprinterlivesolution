@@ -15,7 +15,7 @@ const Footer = () => {
               <h3 className=" font-bold mb-3">Quick Links</h3>
               <ul>
                 <li className="mb-3">
-                  <Link to="/">Home</Link>
+                  <a href="#">Home</a>
                 </li>
                 <li className="mb-3">
                   <Link to="/about">About us</Link>
@@ -173,8 +173,8 @@ const Footer = () => {
       <div style={{ backgroundColor: '#FF0000', padding: '15px' }}>
         <div className="container mx-auto">
           <p className="text-center text-white text-lg">
-            © {new Date().getFullYear()} ijprintersolution Store. All rights
-            reserved
+            © {new Date().getFullYear()} ij printersolutionLive Store. All
+            rights reserved
           </p>
         </div>
       </div>

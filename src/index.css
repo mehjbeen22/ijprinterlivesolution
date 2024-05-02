@@ -20,3 +20,11 @@
   border-radius: 0; /* Sets border-radius to none */
   border: 10px solid red; /* Adds 8px red border */
 }
+
+/* About Page Container media query */
+
+@media (max-width: 950px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+}

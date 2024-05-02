@@ -43,16 +43,14 @@ export default function Contact() {
       ) : (
         <>
           <div style={style}></div>
-          <div className="isolate  px-6 py-24 sm:py-32 lg:px-8 bg-gray-50">
-            <p className="text-5xl text-center font-bold  text-red-500 sm:text-4xl">
-              Contact Us
-            </p>
+          <div className="isolate  px-6 py-15  lg:px-8 bg-gray-50 ">
+            <p className="text-center text-5xl text-red-500 m-5 ">Contact Us</p>
 
             {/* <div className="mx-auto max-w-2xl  shadow-2xl p-5"> */}
             <form
               action="#"
               method="POST"
-              className="mx-auto mt-16 max-w-xl sm:mt-20 "
+              className="mx-auto  max-w-xl sm:mt-10 shadow-md p-5 border border-gray-200 rounded-sm "
               onSubmit={(e) => e.preventDefault()}
             >
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
