@@ -28,25 +28,37 @@ const SetupProduct = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between mx-auto max-w-4xl sm:mt-10 shadow-md p-2 border border-gray-200 rounded-sm ">
-      <Link
-        to="/"
-        className="border-1 border-black focus:ring-2 focus:ring-white focus:outline-none font-medium rounded-lg text-sm
+    <div className="flex flex-col justify-between mx-auto max-w-4xl sm:mt-10 shadow-md p-2 border border-gray-200  ">
+      <div className="flex justify-between ">
+        <img
+          src="https://www.cla.canon.com/sys/images/canon_main_logo.gif"
+          className="h-10 w-auto ml-10 text-2xl italic text-red-700 font-medium"
+          alt="Canon Logo"
+        />
+
+        <Link
+          to="/"
+          className="border-1 border-black focus:ring-2 focus:ring-white focus:outline-none font-medium rounded-lg text-sm
          p-2 w-[10%] self-end text-center"
+        >
+          🔙 Home
+        </Link>
+      </div>
+
+      <h1
+        className="text-2xl font-bold text-black py-2 pl-6 mt-4 bg-[#d9d9d9] border-1
+       border-[#d9d9d9] rounded-sm"
       >
-        🔙 Home
-      </Link>
-      <h1 className="text-2xl font-bold text-black py-2 pl-6 mt-4 bg-[#d9d9d9] border-1 border-[#d9d9d9]">
         Select Product Name
       </h1>
 
-      <div className="flex flex-col items-center px-4 py-8 space-y-4">
+      <div className="flex flex-col items-center  space-y-4">
         <p className="text-center text-lg mb-2">
           Search for your product name or select from the list.
         </p>
         <div
           className="flex flex-col justify-center py-12 items-center
-         w-full bg-gray-200 border-1 border-[#d9d9d9] relative"
+         w-full bg-gray-200 border-1 border-[#d9d9d9] relative rounded-sm"
         >
           {showError && (
             <p className="text-red-500">
