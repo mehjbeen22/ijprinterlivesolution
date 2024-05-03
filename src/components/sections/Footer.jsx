@@ -112,7 +112,7 @@ const Footer = () => {
                   </svg>
 
                   <a href="mailto:support@ijprintersolution.com">
-                    ijprinter@ijprinterlivesolution.com
+                    support@ijprinterlivesolution.com
                   </a>
                 </li>
               </ul>
@@ -170,7 +170,7 @@ const Footer = () => {
       </div>
 
       {/* last Footer */}
-      <div className='p-4 bg-red-700'>
+      <div className="p-4 bg-red-700">
         <div className="container mx-auto">
           <p className="text-center text-white text-lg">
             © {new Date().getFullYear()} ij printersolutionLive Store. All
