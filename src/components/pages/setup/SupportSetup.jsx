@@ -9,7 +9,7 @@ function SupportSetup() {
   useEffect(() => {
     setTimeout(() => {
       setShow(false);
-    }, 15000);
+    }, 1000);
   }, []);
 
   return (
@@ -59,11 +59,21 @@ function SupportSetup() {
             </Stack>
           </main>
         ) : (
-          <img
-            src="https://ijstartprinter.com/images/error.png"
-            alt=""
-            className="flex w-full lg:w-[60%] flex-col"
-          />
+          <div
+            style={{
+              // border: '2px solid',
+              height: '100vh',
+              display: 'flex',
+                justifyContent: 'center',
+              alignItems : "center"
+            }}
+          >
+            <img
+              src="https://ijstartprinter.com/images/error.png"
+              alt=""
+              className="flex w-full lg:w-[60%] "
+            />
+          </div>
         )}
       </div>
     </>

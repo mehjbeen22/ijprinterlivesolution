@@ -56,7 +56,7 @@ export default function Home() {
                   <Link
                     to="/productsetup"
                     className="flex mt-3 p-2  items-center gap-2
-              bg-red-700 text-white   bg-black rounded-md w-[45%]"
+              bg-red-700 text-white   bg-black rounded-md  sm:w-[45%] w-[80%]"
                   >
                     <div
                       className="bg-red-700"
