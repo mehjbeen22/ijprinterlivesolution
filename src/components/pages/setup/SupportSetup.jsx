@@ -71,7 +71,7 @@ function SupportSetup() {
             <img
               src="https://i.ibb.co/3m9JVTG/error-image-Photoroom.png"
               alt=""
-              className="flex w-full lg:w-[60%] "
+              className="flex w-full lg:w-[80%] "
             />
           </div>
         )}
