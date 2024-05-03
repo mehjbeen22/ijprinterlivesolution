@@ -17,7 +17,7 @@ export default function Products() {
       </h1> */}
       <div>
         {/* className="border-2 border-current" */}
-        <div className=" flex flex-col justify-center items-center mt-10 gap-5 p-16 shadow-2xl ">
+        <div className=" flex flex-col justify-center items-center  gap-5 p-16 shadow-2xl ">
           {/* border-4 border-red-200 */}
           <h2
             className="text-2xl  text-white inline p-3 sm:text-4xl"

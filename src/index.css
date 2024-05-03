@@ -46,3 +46,17 @@
   }
 }
 
+/* ----------------------------- */
+
+.autocomplete-items {
+  position: relative;
+  font-size: 14px;
+  border-bottom: none;
+  border-top: none;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 150px;
+  overflow-y: scroll;
+}

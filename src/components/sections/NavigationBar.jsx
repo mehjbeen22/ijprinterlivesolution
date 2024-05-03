@@ -17,6 +17,13 @@ function classNames(...classes) {
 export default function NavigationBar() {
   const location = useLocation();
 
+  // Define an array of routes where you want to hide the navbar
+  const routesWithoutNavbar = ['/productsetup', '/canonsetup', '/supportsetup'];
+
+  if (routesWithoutNavbar.includes(location.pathname)) {
+    return null; // Don't render the navbar
+  }
+
   return (
     <Disclosure as="nav" className="bg-gray-50 border-2 border-gray-200">
       {({ open }) => (

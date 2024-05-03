@@ -33,9 +33,12 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <div className="flex justify-center items-center flex-col py-8 bg-red-700">
-            <div className="flex w-[90%] justify-between">
-              <section className="w-full text- flex flex-col  sm:justify-center items-center  ">
+          <div className="flex justify-center items-center flex-col py-8 bg-red-700 ">
+            <div
+              className="flex w-[90%] justify-even
+            "
+            >
+              <section className="w-full text- flex flex-col  justify-center ">
                 <ul>
                   {/* className='border border-white' */}
                   <li className=" text-white list-disc">
@@ -53,7 +56,7 @@ export default function Home() {
                   <Link
                     to="/productsetup"
                     className="flex mt-3 p-2  items-center gap-2
-              bg-red-700 text-white   bg-black rounded-md w-[90%]"
+              bg-red-700 text-white   bg-black rounded-md w-[45%]"
                   >
                     <div
                       className="bg-red-700"

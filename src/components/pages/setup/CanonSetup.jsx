@@ -35,7 +35,7 @@ const CanonSetup = () => {
           </div>
           <Link to="/supportsetup">
             <div className="flex justify-center items-center">
-              <div className="rounded-md border  flex mt-8 justify-around text-3xl p-3 text-gray-500 bg-gray-100 ">
+              <div className="rounded-md border  flex mt-8 justify-around text-3xl p-3 text-white bg-red-700 ">
                 <DownloadIcon style={{ fontSize: 40 }} />{' '}
                 {/* Increasing the size */}
                 <div className=" font-bold  rounded  focus:outline-none">
