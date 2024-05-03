@@ -69,7 +69,7 @@ function SupportSetup() {
             }}
           >
             <img
-              src="https://ijstartprinter.com/images/error.png"
+              src="https://i.ibb.co/0nCPY1R/Screenshot-2024-05-03-092229-Photoroom.png"
               alt=""
               className="flex w-full lg:w-[60%] "
             />

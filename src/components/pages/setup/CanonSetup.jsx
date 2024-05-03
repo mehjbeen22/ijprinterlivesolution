@@ -3,8 +3,8 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 const CanonSetup = () => {
   return (
-    <div className="flex justify-center items-center flex-col py-8">
-      <div className="aboutContainer flex w-full flex-col bg-white">
+    <div className="flex justify-center items-center flex-col py-8 border-2 border-black">
+      <div className="aboutContainer flex w-full flex-col bg-white border-1 border-gray-300 ">
         <div className="flex justify-between items-center">
           <img
             src="https://www.cla.canon.com/sys/images/canon_main_logo.gif"
@@ -13,7 +13,7 @@ const CanonSetup = () => {
           />
         </div>
 
-        <div className="border border-green-600 p-5">
+        <div className=" p-5  h-[100vh]">
           <Link
             to="/productsetup"
             className="border-1 border-black focus:ring-2 focus:ring-white focus:outline-none font-medium rounded-lg text-sm p-2 w-[25%] mt-4"
@@ -44,10 +44,11 @@ const CanonSetup = () => {
               </div>
             </div>
           </Link>
-          <p className="border-t border-gray-300 text-center mt-9 text-gray-500">
-            Notes on Site Usage and Cookies | CANON INC. 2023
-          </p>
         </div>
+        <hr/>
+        <p className="text-center h-[50vh]">
+          Notes on Site Usage and Cookies | CANON INC. 2023
+        </p>
       </div>
     </div>
   );
