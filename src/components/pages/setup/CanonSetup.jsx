@@ -3,8 +3,8 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 const CanonSetup = () => {
   return (
-    <div className="flex justify-center items-center flex-col py-8 border-2 border-black">
-      <div className="aboutContainer flex w-full flex-col bg-white border-1 border-gray-300 ">
+    <div className="flex justify-center items-center flex-col py-8 ">
+      <div className="aboutContainer flex w-full flex-col bg-white  shadow-md">
         <div className="flex justify-between items-center">
           <img
             src="https://www.cla.canon.com/sys/images/canon_main_logo.gif"
@@ -21,7 +21,7 @@ const CanonSetup = () => {
             🔙 Back to Setup Product Page
           </Link>
           <div className="bg-gray-200  px-4 py-4 mt-8">
-            <h3 className="text-3xl font-bold  mb-2 ">Setup Windows</h3>
+            <h3 className="text-3xl font-bold  mb-2 ">Setup - Canon Printer</h3>
           </div>
           <div className="pl-14 m-2 pt-8">
             {' '}
@@ -35,17 +35,20 @@ const CanonSetup = () => {
           </div>
           <Link to="/supportsetup">
             <div className="flex justify-center items-center">
-              <div className="rounded-md border  flex mt-8 justify-around text-3xl p-3 text-white bg-red-700 ">
+              <div
+                className="rounded-md border  flex mt-8  text-3xl p-3 w-[30%]
+               text-white bg-red-700 "
+              >
                 <DownloadIcon style={{ fontSize: 40 }} />{' '}
                 {/* Increasing the size */}
-                <div className=" font-bold  rounded  focus:outline-none">
+                <div className=" font-bold ml-3 rounded  focus:outline-none">
                   Download
                 </div>
               </div>
             </div>
           </Link>
         </div>
-        <hr/>
+        <hr />
         <p className="text-center h-[50vh]">
           Notes on Site Usage and Cookies | CANON INC. 2023
         </p>

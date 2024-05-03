@@ -9,7 +9,7 @@ function SupportSetup() {
   useEffect(() => {
     setTimeout(() => {
       setShow(false);
-    }, 1000);
+    }, 15000);
   }, []);
 
   return (
@@ -69,7 +69,7 @@ function SupportSetup() {
             }}
           >
             <img
-              src="https://i.ibb.co/0nCPY1R/Screenshot-2024-05-03-092229-Photoroom.png"
+              src="https://i.ibb.co/3m9JVTG/error-image-Photoroom.png"
               alt=""
               className="flex w-full lg:w-[60%] "
             />

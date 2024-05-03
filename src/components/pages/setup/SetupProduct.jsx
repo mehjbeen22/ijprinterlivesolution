@@ -52,8 +52,8 @@ const SetupProduct = () => {
         Select Product Name
       </h1>
 
-      <div className="flex flex-col items-center  space-y-4">
-        <p className="text-center text-lg mb-2">
+      <div className="flex flex-col items-center  mt-12 space-y-4">
+        <p className="text-center text-lg mb-1 ">
           Search for your product name or select from the list.
         </p>
         <div
