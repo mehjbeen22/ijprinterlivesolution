@@ -41,4 +41,8 @@
   .aboutContainer {
     max-width: 1000px; /* Adjust to desired fixed content width */
   }
+  .mobileAlignCenter {
+    align-items: center; /* Reset alignment on larger screens */
+  }
 }
+

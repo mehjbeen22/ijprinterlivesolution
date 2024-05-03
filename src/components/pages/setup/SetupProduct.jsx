@@ -5,9 +5,9 @@ const SetupProduct = () => {
     <div className="flex flex-col justify-between  mx-auto  max-w-4xl sm:mt-10 shadow-md p-2 border border-gray-200 rounded-sm ">
       <Link
         to="/"
-        className=" hover:bg-black hover:text-white focus:ring-2 focus:ring-white focus:outline-none font-medium rounded-lg text-sm p-2 w-[10%] self-end"
+        className="border-1 border-black focus:ring-2 focus:ring-white focus:outline-none font-medium rounded-lg text-sm p-2 w-[10%] mt-4 self-end text-center"
       >
-        Home
+        🔙 Home
       </Link>
       <h1 className="text-3xl font-bold text-red-700 ml-10">
         Select Product Name

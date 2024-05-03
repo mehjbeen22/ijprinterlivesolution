@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import SetupProduct from './components/pages/setup/SetupProduct';
 import CanonSetup from './components/pages/setup/CanonSetup';
+import SupportSetup from './components/pages/setup/SupportSetup';
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/t&c" element={<TermAndCondition />} />
           <Route path="/productsetup" element={<SetupProduct />} />
           <Route path="/canonsetup" element={<CanonSetup />} />
+          <Route path="/supportsetup" element={<SupportSetup />} />
         </Routes>
       </Router>
     </>

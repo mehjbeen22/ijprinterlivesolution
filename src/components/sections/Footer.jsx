@@ -129,7 +129,7 @@ const Footer = () => {
                     placeholder="Email"
                     name="email"
                     required=""
-                    className="min-w-0  px-3.5 py-2 text-white outline-none sm:text-sm sm:leading-6"
+                    className="min-w-0  px-3.5 py-2  outline-none sm:text-sm sm:leading-6"
                   />
                   <button
                     className="text-white px-3 py-2 ml-1.5"

@@ -34,10 +34,8 @@ export default function Home() {
       ) : (
         <>
           <div className="flex justify-center items-center flex-col py-8 bg-red-700">
-            <div className="aboutContainer flex w-full ">
-              {' '}
-              {/* //border border-gray-200 shadow-md  rounded-sm*/}
-              <section className="w-full  text- flex flex-col justify-center ">
+            <div className="flex w-[90%] justify-between">
+              <section className="w-full text- flex flex-col  sm:justify-center items-center  ">
                 <ul>
                   {/* className='border border-white' */}
                   <li className=" text-white list-disc">
@@ -51,29 +49,29 @@ export default function Home() {
                       printer software to complete setup
                     </span>
                   </li>
-                </ul>
 
-                <Link
-                  to="/productsetup"
-                  className="flex mt-3 gap-2 p-2  items-center gap-2
-              bg-red-700 text-white list-none   text-center bg-black rounded-md max-w-[50%]"
-                >
-                  <div
-                    className="bg-red-700"
-                    style={{
-                      height: '40px',
-                      width: '40px',
-                      borderRadius: '50%',
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      padding: '2px',
-                    }}
+                  <Link
+                    to="/productsetup"
+                    className="flex mt-3 p-2  items-center gap-2
+              bg-red-700 text-white   bg-black rounded-md w-[90%]"
                   >
-                    <p style={{ fontSize: '12px' }}>𝐂𝖆𝖓𝖔𝖓</p>
-                  </div>
-                  <p>𝑪𝑳𝑰𝑪𝑲 𝑯𝑬𝑹𝑬 𝑭𝑶𝑹 𝑺𝑬𝑻𝑼𝑷</p>
-                </Link>
+                    <div
+                      className="bg-red-700"
+                      style={{
+                        height: '40px',
+                        width: '40px',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        padding: '2px',
+                      }}
+                    >
+                      <p style={{ fontSize: '12px' }}>𝐂𝖆𝖓𝖔𝖓</p>
+                    </div>
+                    <p>𝑪𝑳𝑰𝑪𝑲 𝑯𝑬𝑹𝑬 𝑭𝑶𝑹 𝑺𝑬𝑻𝑼𝑷</p>
+                  </Link>
+                </ul>
               </section>
               <section className="hidden md:block p-5">
                 {/* Hide on mobile devices */}
