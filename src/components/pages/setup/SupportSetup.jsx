@@ -62,10 +62,10 @@ function SupportSetup() {
           <div
             style={{
               // border: '2px solid',
-              height: '100vh',
+              height: '90vh',
               display: 'flex',
-                justifyContent: 'center',
-              alignItems : "center"
+              justifyContent: 'center',
+              alignItems: 'center',
             }}
           >
             <img
