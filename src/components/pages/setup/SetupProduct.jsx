@@ -20,7 +20,7 @@ const SetupProduct = () => {
     item.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
-  const showScrollView = searchTerm && filteredPrinterSeries.length > 0;
+  const showScrollView = searchTerm;
 
   const selectItem = (item) => {
     setSearchTerm(item);
@@ -95,7 +95,7 @@ const SetupProduct = () => {
             </div>
 
             <Link
-              to={showScrollView ? '/canonsetup' : '/productsetup'}
+              to={showScrollView && '/canonsetup'}
               className="hover:bg-red-600 bg-black w-10 text-white font-medium text-md text-center
                ml-2 p-1"
               onClick={handleShowError}
@@ -147,19 +147,4 @@ const product_series = [
   'TS series',
   'TX series',
   'TZ series',
-];
-
-const opareaValues = [
-  'U.S.A.',
-  'Japan',
-  'Canada',
-  'Latin America',
-  'Europe',
-  'Middle East',
-  'China',
-  'Korea',
-  'Hong Kong',
-  'Taiwan',
-  'Asia (Other)',
-  'Oceania',
 ];

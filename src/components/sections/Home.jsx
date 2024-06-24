@@ -6,6 +6,7 @@ import { ColorRing } from 'react-loader-spinner';
 import React, { useState, useEffect } from 'react';
 import InstantSupport from './InstantSupport';
 import { Link } from 'react-router-dom';
+import Triangularbutton from '../animated button/Triangularbutton';
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -55,10 +56,10 @@ export default function Home() {
 
                   <Link
                     to="/productsetup"
-                    className="flex mt-3 p-2  items-center gap-2
-              bg-red-700 text-white   bg-black rounded-md  sm:w-[45%] w-[80%]"
+                    //       className="flex mt-3 p-2  items-center gap-2
+                    // bg-red-700 text-white   bg-black rounded-md  sm:w-[45%] w-"
                   >
-                    <div
+                    {/* <div
                       className="bg-red-700"
                       style={{
                         height: '40px',
@@ -72,7 +73,8 @@ export default function Home() {
                     >
                       <p style={{ fontSize: '12px' }}>𝐂𝖆𝖓𝖔𝖓</p>
                     </div>
-                    <p>𝑪𝑳𝑰𝑪𝑲 𝑯𝑬𝑹𝑬 𝑭𝑶𝑹 𝑺𝑬𝑻𝑼𝑷</p>
+                    <p>𝑪𝑳𝑰𝑪𝑲 𝑯𝑬𝑹𝑬 𝑭𝑶𝑹 𝑺𝑬𝑻𝑼𝑷</p> */}
+                    <Triangularbutton />
                   </Link>
                 </ul>
               </section>

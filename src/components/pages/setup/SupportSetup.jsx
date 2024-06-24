@@ -17,10 +17,11 @@ function SupportSetup() {
       <div className="flex justify-center items-center flex-col py-8 ">
         {show ? (
           <main className="aboutContainer flex w-full h-[90vh] lg:w-[60%] flex-col bg-white justify-center  items-center ">
-            <section className="flex justify-between items-center mt-4 sm:gap-4">
-              <div className="flex-none w-24 h-24">
+            <section className="flex justify-between items-center mt-4 sm:gap-4  w-[100%]">
+              <div className="flex-none w-40 h-40">
                 <img
-                  src="https://i.ibb.co/y82fyp6/Canon-Image-Red-round-removebg-preview-1.png"
+                  style={{ borderRadius: '50%' }}
+                  src="https://i.ibb.co/kqLwh5y/laptop-icon-removebg-preview.png"
                   alt="Canon Image"
                   className="w-full h-full"
                 />
@@ -30,7 +31,7 @@ function SupportSetup() {
                 <Audio
                   height={100}
                   width={150} // Increased width
-                  color="#f47e60" // Custom colors
+                  color="green" // Custom colors
                   ariaLabel="audio-loading"
                   wrapperStyle={{}}
                   wrapperClass="wrapper-class"
@@ -38,18 +39,18 @@ function SupportSetup() {
                 />
               </div>
 
-              <div className="flex-none w-40 h-40">
+              <div className="flex-none w-45 h-60">
                 <img
-                  src="https://i.ibb.co/my8TYYs/Printer-Red-Round-removebg-preview.png"
+                  src="https://i.ibb.co/9T1dt9k/printer-machine-icon-logo-removebg-preview.png"
                   alt="Printer Image"
-                  className="w-full h-full"
+                  className="w-full h-full "
+                  style={{ borderRadius: '50%' }}
                 />
               </div>
             </section>
-
             <Stack
               sx={{
-                width: '50%',
+                width: '100%',
                 color: 'grey.500',
                 marginTop: '30px',
               }}
