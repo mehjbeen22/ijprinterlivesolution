@@ -1,9 +1,9 @@
-import React from 'react';
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GoogleIcon from '@mui/icons-material/Google';
-import styles from '../styling/Home.module.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GoogleIcon from "@mui/icons-material/Google";
+import styles from "../styling/Home.module.css";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className={styles.container}>
@@ -36,7 +36,7 @@ const Footer = () => {
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
                   >
-                    Register{' '}
+                    Register{" "}
                   </Link>
                 </li>
               </ul>
@@ -111,7 +111,7 @@ const Footer = () => {
                     />
                   </svg>
 
-                  <a href="mailto:support@ijprintersolution.com">
+                  <a href="mailto:support@ijijprinterlivesolutioncom">
                     support@ijprinterlivesolution.com
                   </a>
                 </li>
@@ -133,7 +133,7 @@ const Footer = () => {
                   />
                   <button
                     className="text-white px-3 py-2 ml-1.5"
-                    style={{ backgroundColor: '#737373' }}
+                    style={{ backgroundColor: "#737373" }}
                   >
                     GO
                   </button>
@@ -148,17 +148,17 @@ const Footer = () => {
                   <ul className="flex gap-4">
                     <li>
                       <FacebookRoundedIcon
-                        style={{ color: '#6788ce', fontSize: '2.5rem' }}
+                        style={{ color: "#6788ce", fontSize: "2.5rem" }}
                       />
                     </li>
                     <li>
                       <TwitterIcon
-                        style={{ color: '#00acee', fontSize: '2.5rem' }}
+                        style={{ color: "#00acee", fontSize: "2.5rem" }}
                       />
                     </li>
                     <li>
                       <GoogleIcon
-                        style={{ color: '#dd4b39', fontSize: '2.5rem' }}
+                        style={{ color: "#dd4b39", fontSize: "2.5rem" }}
                       />
                     </li>
                   </ul>
