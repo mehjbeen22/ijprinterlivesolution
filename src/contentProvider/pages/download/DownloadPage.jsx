@@ -16,13 +16,13 @@ const DownloadPage = () => {
           <div className="flex gap-4">
             <button
               onClick={handleIsLoader}
-              className="bg-[#292524] text-[#f1f5f9] py-3 px-6 rounded-lg shadow hover:bg-[#251e70] transition duration-300"
+              className="bg-[#b91c1c] text-[#f1f5f9] py-3 px-6 rounded-lg shadow hover:bg-[#251e70] transition duration-300"
             >
               Download for Windows
             </button>
             <button
               onClick={handleIsLoader}
-              className="bg-[#292524] text-[#f1f5f9] py-3 px-6 rounded-lg shadow hover:bg-[#251e70] transition duration-300"
+              className="bg-[#b91c1c] text-[#f1f5f9] py-3 px-6 rounded-lg shadow hover:bg-[#251e70] transition duration-300"
             >
               Download for Mac
             </button>

@@ -1,6 +1,6 @@
 const PrinterOffline = () => {
   return (
-    <main className="flex justify-center items-center p-5 mt-20 text-[#292524]">
+    <main className="flex justify-center items-center p-5 mt-20 ">
       <div className="flex flex-col ">
         <h1 className="text-4xl mb-2 text-gary-600 font-semibold text-center p-2">
           Printer Offline
@@ -8,7 +8,9 @@ const PrinterOffline = () => {
         <section className=" w-[95%] p-5  ">
           {printerSetupContent.map((item) => (
             <div key={item.id} className="my-8">
-              <h2 className="text-2xl font-bold mb-4">{item.head}</h2>
+              <h2 className="text-2xl font-bold mb-4 text-[#b91c1c]">
+                {item.head}
+              </h2>
               {item.description && (
                 <p className="text-lg mb-4">{item.description}</p>
               )}
@@ -108,7 +110,7 @@ const printerSetupContent = [
 //     <main className=" min-h-screen py-8">
 //       <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-24">
 //         <section className="p-2 rounded-lg  mb-10 flex flex-col justify-center items-center">
-//           <h2 className="text-3xl font-bold mb-4 text-[#292524] ">
+//           <h2 className="text-3xl font-bold mb-4 text-[#b91c1c] ">
 //             Printer Offline
 //           </h2>
 //           <div className="text-gray-700 w-[80%] ">
@@ -141,7 +143,7 @@ const printerSetupContent = [
 
 //         <section className="bg-white  flex p-6 rounded-lg shadow-md">
 //           <div className="mb-6 p-10">
-//             <h3 className="text-2xl font-bold mb-4 text-[#292524]">HP Smart</h3>
+//             <h3 className="text-2xl font-bold mb-4 text-[#b91c1c]">HP Smart</h3>
 //             <p className="text-gray-700 mb-4">
 //               If your printer is still offline, the Diagnose & Fix tool in the
 //               HP Smart desktop app can solve issues and automatically maintain

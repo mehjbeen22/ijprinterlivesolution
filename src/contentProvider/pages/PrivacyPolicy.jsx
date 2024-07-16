@@ -67,11 +67,13 @@ const privacyPolicy = [
 
 const PrivacyPolicy = () => {
   return (
-    <div className="bg-white p-10 mt-20 text-[#292524]">
+    <div className="bg-white p-10 mt-20 ">
       <section className="">
         {privacyPolicy.map((section, index) => (
           <div key={index} className="mb-6">
-            <h2 className="text-2xl font-semibold mb-4">{section.title}</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-[#b91c1c]">
+              {section.title}
+            </h2>
             <p className="whitespace-pre-line">{section.content}</p>
           </div>
         ))}

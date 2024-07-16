@@ -20,7 +20,7 @@ const ProductFinder = () => {
     <div>
       <div className="p-6">
         {/* Welcome Section */}
-        <div className="flex justify-between items-center border-b border-[#292524] p-3">
+        <div className="flex justify-between items-center border-b border-[#b91c1c] p-3">
           <h2 className="text-2xl text-green-600">
             Welcome to HP Software and Drivers
           </h2>
@@ -44,7 +44,7 @@ const ProductFinder = () => {
         </div>
 
         {/* Identify Printer Section */}
-        <section className="flex p-8 gap-10 border-b border-[#292524]">
+        <section className="flex p-8 gap-10 border-b border-[#b91c1c]">
           <div className="mb-8 pt-10 w-[50%]">
             <h2 className="text-2xl font-bold">Let's identify your printer</h2>
             <p className="text-lg text-gray-700 mt-2">
@@ -61,7 +61,7 @@ const ProductFinder = () => {
               {canRedirect && (
                 <Link
                   to="/downloadDrivers"
-                  className="px-2 py-1 bg-[#292524] text-white"
+                  className="px-2 py-1 bg-[#b91c1c] text-white"
                 >
                   NEXT
                 </Link>

@@ -35,7 +35,7 @@ const LoaderBar = () => {
         </div>
       ) : (
         <section className="h-screen bg-[#f1f5f9] w-[90%] p-10">
-          <p className="bg-[#292524] text-white p-5 text-3xl">
+          <p className="bg-[#b91c1c] text-white p-5 text-3xl">
             Printer Connect
           </p>
           <div>

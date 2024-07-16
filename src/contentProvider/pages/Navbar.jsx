@@ -8,7 +8,7 @@ const Navbar = () => {
         Logo or Brand
         <Link to="/">
           <img
-            src="https://cdn.freebiesupply.com/images/large/2x/hewlett-packard-logo-[#292524]-and-white.png"
+            src="https://cdn.freebiesupply.com/images/large/2x/hewlett-packard-logo-[#b91c1c]-and-white.png"
             alt="Logo"
             className="h-10 w-10 object-contain"
           />
@@ -16,15 +16,15 @@ const Navbar = () => {
 
         Navigation Items
         <div className="flex space-x-8 text-lg text-gray-700">
-          <p className="hover:text-[#292524] transition duration-300">Explore</p>
-          <p className="hover:text-[#292524] transition duration-300">Shop</p>
-          <p className="hover:text-[#292524] transition duration-300">Support</p>
+          <p className="hover:text-[#b91c1c] transition duration-300">Explore</p>
+          <p className="hover:text-[#b91c1c] transition duration-300">Shop</p>
+          <p className="hover:text-[#b91c1c] transition duration-300">Support</p>
         </div>
       </div> */}
 
       {/* Navigation Links */}
       <ul
-        className="flex flex-col sm:flex-row sm:space-x-8 bg-[#292524]
+        className="flex flex-col sm:flex-row sm:space-x-8 bg-[#b91c1c]
        text-white py-4 px- sm:px-8"
       >
         <li>

@@ -9,7 +9,7 @@ import Disclaimer from "./Disclaimer";
 const Home = () => {
   return (
     <div className="md:mt-0 mt-40">
-      <div className="relative bg-[#292524] 700 py-40">
+      <div className="relative bg-[#b91c1c] 700 py-40">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-60"
           style={{
@@ -24,7 +24,6 @@ const Home = () => {
           <p className="text-lg md:text-2xl animate__animated animate__fadeInUp">
             Your trusted partner for all printer solutions
           </p>
-
           <p className="text-xl mb-10">
             Click Printer Setup for step by step guidance on how to setup ,
             <br />
@@ -47,28 +46,28 @@ const Home = () => {
 
         <div className="flex justify-center gap-8">
           <div className="text-center">
-            <div className="bg-[#292524] rounded-full w-24 h-24 flex items-center justify-center text-white text-4xl mx-auto mb-4">
+            <div className="bg-[#b91c1c] rounded-full w-24 h-24 flex items-center justify-center text-white text-4xl mx-auto mb-4">
               <HeadsetMicIcon sx={{ fontSize: "3rem" }} />
             </div>
             <p className="text-lg font-semibold">Contact</p>
           </div>
 
           <div className="text-center">
-            <div className="bg-[#292524] rounded-full w-24 h-24 flex items-center justify-center text-white text-4xl mx-auto mb-4">
+            <div className="bg-[#b91c1c] rounded-full w-24 h-24 flex items-center justify-center text-white text-4xl mx-auto mb-4">
               <ChatIcon sx={{ fontSize: "3rem" }} />
             </div>
             <p className="text-lg font-semibold">Chat</p>
           </div>
 
           <div className="text-center">
-            <div className="bg-[#292524] rounded-full w-24 h-24 flex items-center justify-center text-white text-4xl mx-auto mb-4">
+            <div className="bg-[#b91c1c] rounded-full w-24 h-24 flex items-center justify-center text-white text-4xl mx-auto mb-4">
               <SettingsSuggestIcon sx={{ fontSize: "3rem" }} />
             </div>
             <p className="text-lg font-semibold">Setup & install</p>
           </div>
 
           <div className="text-center">
-            <div className="bg-[#292524] rounded-full w-24 h-24 flex items-center justify-center text-white text-4xl mx-auto mb-4">
+            <div className="bg-[#b91c1c] rounded-full w-24 h-24 flex items-center justify-center text-white text-4xl mx-auto mb-4">
               <BuildIcon sx={{ fontSize: "3rem" }} />
             </div>
             <p className="text-lg font-semibold">Diagnose & Fix</p>

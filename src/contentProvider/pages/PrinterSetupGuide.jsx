@@ -78,11 +78,11 @@ const printerSetupContent = [
 
 const PrinterSetupGuide = () => {
   return (
-    <div className="bg-gray-100 text-[#292524] p-8">
+    <div className="bg-gray-100  p-8">
       {contentSections.map((section, index) => (
         <div key={index} className="mb-6">
           {section.title && (
-            <h1 className="text-3xl font-bold mb-4 [#082f49]">
+            <h1 className="text-3xl font-bold mb-4 text-[#b91c1c]">
               {section.title}
             </h1>
           )}
@@ -100,10 +100,10 @@ const PrinterSetupGuide = () => {
       ))}
 
       {/* Printer Setup Content */}
-      <div className="bg-gray-100 text-[#292524] p-8">
+      <div className="bg-gray-100  p-8">
         {printerSetupContent.map((section, index) => (
           <div key={index} className="mb-6">
-            <h1 className="text-3xl font-bold mb-4 [#082f49]">
+            <h1 className="text-3xl font-bold mb-4 text-[#b91c1c]">
               {section.title}
             </h1>
             <p className="mb-4">{section.text}</p>

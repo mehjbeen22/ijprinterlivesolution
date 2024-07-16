@@ -1,7 +1,7 @@
 const Disclaimer = () => {
   return (
     <>
-      <div className="bg-[#e2e8f0] text-[#292524] p-8 shadow">
+      <div className="bg-[#e2e8f0] p-8 shadow">
         <h1 className="text-3xl font-bold mb-6 text-center">Disclaimer</h1>
         <p className="mb-4 text-center text-sm">
           ijprinterlivesolutioncom operates as a completely independent

@@ -43,7 +43,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="bg-white text-[#292524] py-12 mt-20">
+      <section className="bg-white text-[#b91c1c] py-12 mt-20">
         <div className="max-w-4xl mx-auto px-4 border shadow-2xl p-4 bg-gray-100">
           <h2 className="text-3xl font-bold mb-4 text-center">Contact Us</h2>
           <p className="mb-6 text-center">
@@ -52,7 +52,7 @@ const Contact = () => {
           </p>
           <form
             onSubmit={handleSubmit}
-            className="grid grid-cols-1 gap-4 max-w-lg mx-auto border-[#292524] border-2 shadow-xl p-5"
+            className="grid grid-cols-1 gap-4 max-w-lg mx-auto border-[#b91c1c] border-2 shadow-xl p-5"
           >
             <div>
               <label className="block text-sm font-medium mb-1">Name</label>
@@ -61,7 +61,7 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-gray-300  focus:outline-none focus:border-[#292524]"
+                className="w-full px-3 py-2 border border-gray-300  focus:outline-none focus:border-[#b91c1c]"
                 placeholder="Enter your name"
               />
             </div>
@@ -72,7 +72,7 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:border-[#292524]"
+                className="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:border-[#b91c1c]"
                 placeholder="Enter your email address"
               />
             </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:border-[#292524]"
+                className="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:border-[#b91c1c]"
                 rows="5"
                 placeholder="Enter your message"
               ></textarea>
@@ -90,7 +90,7 @@ const Contact = () => {
             <div>
               <button
                 type="submit"
-                className="w-full bg-[#292524] text-white py-2 px-4 hover:bg-gray-900 transition duration-300"
+                className="w-full bg-[#b91c1c] text-white py-2 px-4 hover:bg-gray-900 transition duration-300"
               >
                 Submit
               </button>
@@ -107,7 +107,7 @@ const Contact = () => {
             </p>
             <button
               onClick={() => setFormError(false)}
-              className="bg-[#292524] text-white py-2 px-4 hover:bg-gray-900 transition duration-300 rounded-md"
+              className="bg-[#b91c1c] text-white py-2 px-4 hover:bg-gray-900 transition duration-300 rounded-md"
             >
               Close
             </button>
@@ -120,7 +120,7 @@ const Contact = () => {
             <p className="mb-4">Your message has been sent!</p>
             <button
               onClick={closePopup}
-              className="bg-[#292524] text-white py-2 px-4 hover:bg-gray-900 transition duration-300 rounded-md"
+              className="bg-[#b91c1c] text-white py-2 px-4 hover:bg-gray-900 transition duration-300 rounded-md"
             >
               Close
             </button>
